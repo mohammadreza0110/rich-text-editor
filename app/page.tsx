@@ -19,7 +19,7 @@ export default function Home() {
       {!loading && <Loading />}
 
       <div className="flex justify-between mt-4">
-        <Link href="https://github.com/mohammadreza0110">
+        <Link href="https://github.com/mohammadreza0110/rich-text-editor">
           <div className="flex gap-3 select-none hover:text-slate-300 active:scale-90 transition-all duration-200 underline-offset-8 font-bold text-xl text-white items-center">
             <div>My Github</div>
             <BsGithub size={30} />
