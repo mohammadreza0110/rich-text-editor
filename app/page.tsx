@@ -19,10 +19,14 @@ export default function Home() {
       {!loading && <Loading />}
 
       <Link href="https://github.com/mohammadreza0110">
-        <div className="flex gap-3 font-bold text-xl text-white font-sans items-center">
+        <div className="flex gap-3 font-bold text-xl text-white items-center">
           <span>My Github</span>
           <BsGithub size={30} />
         </div>
+        <p className="text-white text-left">
+          Guide: Rapidly Tap Enter Twice to Cancellation of the Current Active
+          Editor Item. (such as a Quote)
+        </p>
       </Link>
     </>
   );
