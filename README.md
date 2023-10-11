@@ -18,7 +18,7 @@ This is a my text editor mini project [TipTap](https://rich-text-editor-one.verc
 
 ### Links
 
-- Live Site URL: [My TipTap Editor](https://your-live-site-url.com)
+- Live Site URL: [My TipTap Editor](https://rich-text-editor-one.vercel.app/)
 
 ## My process
 
