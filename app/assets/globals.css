@@ -15,5 +15,5 @@
 
 .ProseMirror {
   outline: none;
-  @apply max-w-full max-h-full py-6 px-4 prose-li:marker:!text-white focus:ring ring-blue-500 rounded-lg min-h-[350px] mx-auto prose-ol:px-4 prose-sm prose prose-p:text-white prose-strong:text-white prose-ul:px-4  prose-headings:text-white sm:prose-base lg:prose-lg xl:prose-2xl focus:outline-none;
+  @apply max-w-full max-h-full py-6 px-4 prose-ul:my-2 prose-ol:my-2 prose-li:marker:!text-white focus:ring ring-blue-500 rounded-lg min-h-[350px] mx-auto prose-ol:px-4 prose-sm prose prose-p:text-white prose-strong:text-white prose-ul:px-4 prose-headings:text-white prose-headings:my-2 prose-p:my-2 sm:prose-base lg:prose-lg xl:prose-2xl focus:outline-none;
 }
