@@ -14,7 +14,7 @@ export default () => {
     extensions: [
       Image.configure({
         HTMLAttributes: {
-          class: "mx-auto w-2/3 object-cover h-2/3",
+          class: "mx-auto w-full object-cover max-h-[300px]",
         },
       }),
       TextAlign.configure({
@@ -55,7 +55,7 @@ export default () => {
       <button
         type="button"
         onClick={handleEditorChanges}
-        className="px-5 font-sans py-2.5 my-2 text-xl font-bold text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800"
+        className="w-full px-5 font-sans py-2.5 my-2 text-xl font-bold text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800"
       >
         Log Changes
       </button>
