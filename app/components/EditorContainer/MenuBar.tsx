@@ -44,9 +44,9 @@ const MenuBar = ({ editor }: any) => {
   }
 
   return (
-    <div className="flex justify-center flex-wrap p-4 bg-gray-600 rounded-t-lg gap-x-[2.5px]">
+    <div className="flex justify-center flex-wrap p-4 bg-gray-600 rounded-t-lg gap-[9px]">
       <EditorButtons
-        title="پررنگش کن"
+        title="Bold It"
         editor={editor}
         handleClick={() => editor.chain().focus().toggleBold().run()}
         toggleName="bold"
@@ -55,7 +55,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="کجش کن"
+        title="Italic"
         editor={editor}
         handleClick={() => editor.chain().focus().toggleItalic().run()}
         toggleName="italic"
@@ -66,7 +66,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="روش خط بکش"
+        title="OverLine"
         editor={editor}
         handleClick={() => editor.chain().focus().toggleStrike().run()}
         toggleName="strike"
@@ -77,7 +77,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <button
-        title="تغییرات متن رو ریست کن"
+        title="Reset Text Changes"
         type="button"
         onClick={() => editor.chain().focus().unsetAllMarks().run()}
         className="py-2.5 px-[15px] text-white border border-white rounded-lg"
@@ -86,7 +86,7 @@ const MenuBar = ({ editor }: any) => {
       </button>
 
       <EditorButtons
-        title="راست چین"
+        title="Align Right"
         editor={editor}
         handleClick={() => editor.chain().focus().setTextAlign("right").run()}
         toggleName={{ textAlign: "right" }}
@@ -99,7 +99,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="وسط چین"
+        title="Align Center"
         editor={editor}
         handleClick={() => editor.chain().focus().setTextAlign("center").run()}
         toggleName={{ textAlign: "center" }}
@@ -112,7 +112,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="چپ چین"
+         title="Align Left"
         editor={editor}
         handleClick={() => editor.chain().focus().setTextAlign("left").run()}
         toggleName={{ textAlign: "left" }}
@@ -125,7 +125,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="justify"
+        title="Justify"
         editor={editor}
         handleClick={() => editor.chain().focus().setTextAlign("justify").run()}
         toggleName={{ textAlign: "justify" }}
@@ -138,7 +138,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <button
-        title="تغییرات تگ‌ها رو ریست کن"
+        title="Reset Tag Changes"
         type="button"
         onClick={() => editor.chain().focus().clearNodes().run()}
         className="py-2.5 px-[15px] text-white border border-white rounded-lg"
@@ -147,7 +147,7 @@ const MenuBar = ({ editor }: any) => {
       </button>
 
       <EditorButtons
-        title="عنوان 1"
+        title="Heading H1"
         editor={editor}
         handleClick={() =>
           editor.chain().focus().toggleHeading({ level: 1 }).run()
@@ -165,7 +165,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="عنوان 2"
+       title="Heading H2"
         editor={editor}
         handleClick={() =>
           editor.chain().focus().toggleHeading({ level: 2 }).run()
@@ -183,7 +183,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="عنوان 3"
+        title="Heading H3"
         editor={editor}
         handleClick={() =>
           editor.chain().focus().toggleHeading({ level: 3 }).run()
@@ -201,7 +201,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="عنوان 4"
+         title="Heading H4"
         editor={editor}
         handleClick={() =>
           editor.chain().focus().toggleHeading({ level: 4 }).run()
@@ -219,7 +219,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="عنوان 5"
+       title="Heading H5"
         editor={editor}
         handleClick={() =>
           editor.chain().focus().toggleHeading({ level: 5 }).run()
@@ -237,7 +237,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="عنوان 6"
+         title="Heading H6"
         editor={editor}
         handleClick={() =>
           editor.chain().focus().toggleHeading({ level: 6 }).run()
@@ -255,7 +255,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="لیست"
+        title="Bullet List"
         editor={editor}
         handleClick={() => editor.chain().focus().toggleBulletList().run()}
         toggleName="bulletList"
@@ -266,7 +266,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <EditorButtons
-        title="لیست شماره دار"
+        title="Ordered List"
         editor={editor}
         handleClick={() => editor.chain().focus().toggleOrderedList().run()}
         toggleName="orderedList"
@@ -289,7 +289,7 @@ const MenuBar = ({ editor }: any) => {
       </button> */}
 
       <EditorButtons
-        title="نقل قول"
+        title="Blockquote"
         editor={editor}
         handleClick={() => editor.chain().focus().toggleBlockquote().run()}
         toggleName="blockquote"
@@ -300,7 +300,7 @@ const MenuBar = ({ editor }: any) => {
       </EditorButtons>
 
       <button
-        title="خط افقی"
+        title="Horizontal Rule"
         type="button"
         onClick={() => editor.chain().focus().setHorizontalRule().run()}
         className="py-2.5 px-[15px] text-white border border-white rounded-lg"
@@ -309,7 +309,7 @@ const MenuBar = ({ editor }: any) => {
       </button>
 
       <button
-        title="یک خط برو پایین"
+        title="Hard Break"
         type="button"
         onClick={() => editor.chain().focus().setHardBreak().run()}
         className="py-2.5 px-[15px] text-white border border-white rounded-lg"
@@ -318,7 +318,7 @@ const MenuBar = ({ editor }: any) => {
       </button>
 
       <button
-        title="عکس بذار"
+        title="Add Image"
         type="button"
         onClick={addImage}
         className="py-2.5 px-[15px] text-white border border-white rounded-lg"
@@ -327,7 +327,7 @@ const MenuBar = ({ editor }: any) => {
       </button>
 
       <button
-        title="redo"
+        title="Redo"
         type="button"
         onClick={() => editor.chain().focus().redo().run()}
         disabled={!editor.can().chain().focus().redo().run()}
@@ -337,7 +337,7 @@ const MenuBar = ({ editor }: any) => {
       </button>
 
       <button
-        title="undo"
+        title="Undo"
         type="button"
         onClick={() => editor.chain().focus().undo().run()}
         disabled={!editor.can().chain().focus().undo().run()}
@@ -370,7 +370,7 @@ const MenuBar = ({ editor }: any) => {
             : "" + `text-white border border-white rounded-xl px-2 py-1`
         }
       >
-        بنفش
+        Purple
       </button> */}
     </div>
   );
