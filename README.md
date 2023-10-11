@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TipTap with Next.js v13.5.4
 
-## Getting Started
+This is a my text editor mini project [TipTap](https://rich-text-editor-one.vercel.app/). this is can help you go faster and config tiptap much faster !
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+
+### Screenshot
+
+![](./public/screenshot/editor.jpg)
+
+### Links
+
+- Live Site URL: [My TipTap Editor](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- TipTap
+- [TipTap](https://tiptap.dev/) - For rich text editor 
+- [TailwindCss](https://tailwindcss.com/) - For rich styling
+- [Next.js v13.5.4](https://nextjs.org/) - The React Framework for the Web
+
+### What I learned
+
+I proudly learned:
+
+- How to implement texteditor with TipTap and customize it for Next v13.5.4 app route
+- Customize ProseMirror TipTap Css Classes That Work with @tailwindcss/typography
+- New expreiences with conditional classes in tailwindcss
+
+```css
+.ProseMirror {
+  outline: none;
+  /* padding: 10px 10px 200px; */
+  @apply max-w-full max-h-full py-6 px-4 focus:ring ring-blue-500 rounded-lg min-h-[350px] mx-auto prose-sm prose prose-p:text-white prose-strong:text-white prose-ul:px-4 prose-headings:text-white sm:prose-base lg:prose-lg xl:prose-2xl focus:outline-none;
+}
+
+.ProseMirror :where(ol > li):not(:where([class~="not-prose"] *))::marker {
+  @apply text-slate-700;
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```tsx
+const handleEditorChanges = () => {
+  const html = editor?.getHTML();
+  const json = editor?.getJSON();
+  const text = editor?.getText();
+  console.log("Html ====>", html);
+  console.log("JSON ====>", json);
+  console.log("Text ====>", text);
+};
+```
+## Author
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- github - [@mohammadreza0110](https://github.com/mohammadreza0110)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
