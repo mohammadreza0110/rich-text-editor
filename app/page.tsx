@@ -18,16 +18,19 @@ export default function Home() {
 
       {!loading && <Loading />}
 
-      <Link href="https://github.com/mohammadreza0110">
-        <div className="flex gap-3 font-bold text-xl text-white items-center">
-          <span>My Github</span>
-          <BsGithub size={30} />
-        </div>
+      <div className="flex justify-between mt-4">
+        <Link href="https://github.com/mohammadreza0110">
+          <div className="flex gap-3 select-none hover:text-slate-300 active:scale-90 transition-all duration-200 underline-offset-8 font-bold text-xl text-white items-center">
+            <div>My Github</div>
+            <BsGithub size={30} />
+          </div>
+        </Link>
+
         <p className="text-white text-left">
           Guide: Rapidly Tap Enter Twice to Cancellation of the Current Active
           Editor Item. (such as a Quote)
         </p>
-      </Link>
+      </div>
     </>
   );
 }
