@@ -10,13 +10,12 @@
   body {
     font-family: "yekan-bakh" !important;
     direction: rtl;
-    @apply flex flex-col justify-center h-screen mx-auto overflow-x-hidden bg-slate-700;
+    @apply mt-24 h-full mx-auto bg-slate-700;
   }
 }
 
 .ProseMirror {
   outline: none;
-  /* padding: 10px 10px 200px; */
   @apply max-w-full max-h-full py-6 px-4 focus:ring ring-blue-500 rounded-lg min-h-[350px] mx-auto prose-sm prose prose-p:text-white prose-strong:text-white prose-ul:px-4 prose-headings:text-white sm:prose-base lg:prose-lg xl:prose-2xl focus:outline-none;
 }
 
