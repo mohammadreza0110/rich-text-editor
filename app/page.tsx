@@ -11,7 +11,7 @@ export default function Home() {
 
       <Link href="https://github.com/mohammadreza0110">
         <div className="flex gap-3 font-bold text-xl text-white font-sans items-center">
-          <span>MyGithub</span>
+          <span>My Github</span>
           <BsGithub size={30} />
         </div>
       </Link>
