@@ -8,6 +8,7 @@ interface Props {
   toggleName: string | any;
   level?: number;
   title: string;
+  className?: string;
 }
 
 export default function EditorButtons({
@@ -15,6 +16,7 @@ export default function EditorButtons({
   children,
   handleClick,
   toggleName,
+  className,
   level,
   title,
 }: Props) {
@@ -24,7 +26,7 @@ export default function EditorButtons({
       title={title}
       onClick={handleClick}
       disabled={!handleClick}
-      className={`border rounded-lg py-2.5 px-[15px] ${
+      className={`${className} border rounded-lg py-2.5 px-[15px] ${
         editor.isActive(toggleName, level && { level: level })
           ? "text-amber-200 border-amber-200"
           : "text-white border-white"
