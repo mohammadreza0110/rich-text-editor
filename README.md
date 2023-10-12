@@ -119,4 +119,4 @@ export default () => {
 
 ## Author
 
-- LinkedIn - [@mohammadreza-khorsand](www.linkedin.com/in/mohammadreza-khorsand)
+- LinkedIn - [mohammadreza-khorsand](www.linkedin.com/in/mohammadreza-khorsand)
