@@ -24,7 +24,6 @@ This is a my text editor mini project [TipTap](https://rich-text-editor-one.verc
 
 ### Built with
 
-- TipTap
 - [TipTap](https://tiptap.dev/) - For rich text editor
 - [TailwindCss](https://tailwindcss.com/) - For rich styling
 - [Next.js v13.5.4](https://nextjs.org/) - The React Framework for the Web
