@@ -9,7 +9,7 @@
 
   body {
     direction: rtl;
-    @apply mt-24 font-sans h-full mx-auto bg-slate-700 selection:bg-white selection:text-fuchsia-600;
+    @apply mt-24 !font-sans h-full mx-auto bg-slate-700 selection:bg-white selection:text-fuchsia-600;
   }
 }
 
