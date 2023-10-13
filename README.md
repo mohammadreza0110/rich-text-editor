@@ -1,6 +1,6 @@
 # TipTap with Next.js v13.5.4
 
-This is a my text editor mini project [TipTap](https://rich-text-editor-one.vercel.app/). this is can help you go faster and config tiptap much faster !
+This is a my text editor mini project [TipTap](https://rich-text-editor-one.vercel.app/). this can help you go faster and config tiptap much faster !
 
 ## Table of contents
 
